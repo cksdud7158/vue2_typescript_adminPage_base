@@ -1,16 +1,14 @@
 <template>
-  <v-main>
-    <v-container>
-      <canvas ref="myChart" />
-      <v-btn @click="downImage">Chart 이미지 다운로드</v-btn>
-    </v-container>
-  </v-main>
+  <v-container>
+    <canvas ref="myChart" />
+    <v-btn @click="downImage">Chart 이미지 다운로드</v-btn>
+  </v-container>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
 import html2canvas from "html2canvas";
-import { trackingData } from "@/constants/data";
+import { trackingData } from "@/constants/eyeLocation";
 
 interface chartData {
   x: number;

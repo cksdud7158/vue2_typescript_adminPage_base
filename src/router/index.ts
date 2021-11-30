@@ -22,6 +22,33 @@ const routes: Array<RouteConfig> = [
             "@/views/default/Dashboard.vue"
           ),
       },
+      {
+        path: "gridsystem",
+        name: "gridSystem",
+        component: () =>
+          import(
+            /* webpackChunkName: "views-dashboard" */
+            "@/views/default/GridSystem.vue"
+          ),
+      },
+      {
+        path: "tables/basic-table",
+        name: "basicTable",
+        component: () =>
+          import(
+            /* webpackChunkName: "views-dashboard" */
+            "@/views/default/basicTable.vue"
+          ),
+      },
+      {
+        path: "mqtest",
+        name: "MQTest",
+        component: () =>
+          import(
+            /* webpackChunkName: "views-dashboard" */
+            "@/views/default/MQTest.vue"
+          ),
+      },
     ],
   },
 ];

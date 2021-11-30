@@ -9,6 +9,9 @@ import Vue from "vue";
 
 export default Vue.extend({
   name: "appbar",
+  mounted() {
+    this.$emit("scrollingArea", "scrollingArea");
+  },
   methods: {
     changeDrawerState() {
       this.$emit("change");
