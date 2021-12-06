@@ -1,6 +1,9 @@
 export const items = [
   { title: "Dashboard", icon: "mdi-view-dashboard", to: "/" },
   { title: "GridSystem", icon: "mdi-grid", to: "/gridsystem" },
+  { title: "MQTest", icon: "mdi-emoticon-excited-outline", to: "/mqtest" },
+  { title: "Graphviz", icon: "mdi-graph", to: "/graphviz" },
+  { title: "Chart", icon: "mdi-chart-bar", to: "/chart" },
   {
     title: "Pages",
     icon: "mdi-menu",
@@ -24,5 +27,4 @@ export const items = [
       { title: "ZK Table", to: "/tables/zktable" },
     ],
   },
-  { title: "MQTest", icon: "mdi-emoticon-excited-outline", to: "/mqtest" },
 ];

@@ -49,6 +49,24 @@ const routes: Array<RouteConfig> = [
             "@/views/default/MQTest.vue"
           ),
       },
+      {
+        path: "graphviz",
+        name: "Graphviz",
+        component: () =>
+          import(
+            /* webpackChunkName: "views-dashboard" */
+            "@/views/default/graphviz.vue"
+          ),
+      },
+      {
+        path: "chart",
+        name: "Chart",
+        component: () =>
+          import(
+            /* webpackChunkName: "views-dashboard" */
+            "@/views/default/chart.vue"
+          ),
+      },
     ],
   },
 ];

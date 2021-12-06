@@ -1,12 +1,10 @@
 import Vue from "vue";
 import { Chart } from "chart.js";
 import { MyStore } from "@/types/vuexType";
-const amqp = require("amqplib");
 
 declare module "vue/types/vue" {
   interface Vue {
     $_Chart: typeof Chart;
-    $_amqp: typeof amqp;
   }
 }
 
